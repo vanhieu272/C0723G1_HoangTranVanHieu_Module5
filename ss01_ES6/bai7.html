@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+        }
+
+        const people = [
+            new Person('Thuan', 26),
+            new Person('Huu', 24),
+            new Person('Hieu', 22)
+        ]
+
+        for(const{name, age} of people){
+            console.log(`Name :  ${name}, Age :  ${age}`);
+        }
+
+    </script>
+</body>
+</html>

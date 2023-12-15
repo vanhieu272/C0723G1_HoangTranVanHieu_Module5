@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const min = -5;
+      const max = 10;
+      const arrayLength = 10;
+      const targetNum = 9;
+
+      const arr = Array.from(
+        { length: arrayLength },
+        () => Math.floor(Math.random() * (max - min + 1)) + min
+      );
+      console.log(arr);
+
+      let [first, ...rest] = arr;
+      console.log(first);
+      console.log(rest);
+    </script>
+  </body>
+</html>
