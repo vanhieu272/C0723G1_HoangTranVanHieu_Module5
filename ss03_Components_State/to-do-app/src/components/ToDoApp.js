@@ -1,6 +1,5 @@
 import {useState} from "react";
 
-//Bài này em có tham khảo GPT và đã hiểu + tự làm lại.
 function TodoApp() {
     const [task, setTask] = useState('');
     const [tasksList, setTasksList] = useState([]);
