@@ -11,7 +11,6 @@
       const min = 0;
       const max = 10;
       const arrayLength = 10;
-      const targetNum = 9;
 
       const arr = Array.from(
         { length: arrayLength },
@@ -19,14 +18,14 @@
       );
       console.log(arr);
 
-      const newArr = arr.map((element) => {
-        if (element > 5) {
-          return element;
-        }
-      });
-      console.log(newArr);
+      // const newArr = arr.map((element) => {
+      //   if (element > 5) {
+      //     return element;
+      //   }
+      // });
+      // console.log(newArr);
 
-      const filteredArr = newArr.filter((element) => element !== undefined);
+      const filteredArr = arr.filter((element) => element > 5);
       console.log(filteredArr);
     </script>
   </body>

@@ -41,7 +41,7 @@ export default function Student(){
                     <th>Country</th>
                 </tr>
                 {students.map(student => (
-                    <tr>
+                    <tr key={student.id}>
                         <td>{student.company}</td>
                         <td>{student.contact}</td>
                         <td>{student.country}</td>
