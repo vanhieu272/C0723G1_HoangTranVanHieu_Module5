@@ -10,7 +10,7 @@ function TodoApp() {
 
     const handleAddItem = () => {
         if (task.trim() !== '') {
-            setTasksList([...tasksList, task]);
+            setTasksList(preToDoList => [...preToDoList, task]);
             setTask('');
         }else {
             alert('Vui lòng nhập task')
