@@ -141,43 +141,15 @@
     <div class="container">
       <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
         <h1 class="mb-5">
-          <span class="text-primary text-uppercase">Thông tin thêm mới phòng</span>
+          <span class="text-primary text-uppercase">Thêm mới khách hàng</span>
         </h1>
       </div>
       <div class="row g-5">
         <div class="col-lg-6">
           <div class="row g-3">
-            <div class="col-6 text-end">
-              <img
-                      class="img-fluid rounded w-75 wow zoomIn"
-                      data-wow-delay="0.1s"
-                      src="img/about-1.jpg"
-                      style="margin-top: 25%"
-              />
-            </div>
-            <div class="col-6 text-start">
-              <img
-                      class="img-fluid rounded w-100 wow zoomIn"
-                      data-wow-delay="0.3s"
-                      src="img/about-2.jpg"
-              />
-            </div>
-            <div class="col-6 text-end">
-              <img
-                      class="img-fluid rounded w-50 wow zoomIn"
-                      data-wow-delay="0.5s"
-                      src="img/about-3.jpg"
-              />
-            </div>
-            <div class="col-6 text-start">
-              <img
-                      class="img-fluid rounded w-75 wow zoomIn"
-                      data-wow-delay="0.7s"
-                      src="img/about-4.jpg"
-              />
-            </div>
+          <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="">
           </div>
-        </div>
+          </div>
         <div class="col-lg-6">
           <div class="wow fadeInUp" data-wow-delay="0.2s">
             <form>
@@ -190,93 +162,50 @@
                             id="room-name"
                             placeholder="Your Name"
                     />
-                    <label for="room-name">Tên Phòng</label>
+                    <label for="room-name">Tên khách hàng</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
                     <input
-                            type="text"
+                            type="date"
                             class="form-control"
-                            id="area"
+                            id="dob"
                             placeholder="Your Email"
                     />
-                    <label for="area">Diện tích</label>
+                    <label for="dob">Ngày sinh</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
                     <select class="form-select" id="select1">
-                      <option value="1">Room</option>
-                      <option value="2">House</option>
-                      <option value="3">Villa</option>
+                      <option value="1">Nam</option>
+                      <option value="2">Nữ</option>
                     </select>
-                    <label for="select1">Loại phòng</label>
+                    <label for="select1">Giới tính</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
                     <select class="form-select" id="select2">
-                      <option value="1">Standard</option>
-                      <option value="2">Deluxe</option>
+                      <option value="1">Diamond</option>
+                      <option value="2">Platinum</option>
+                      <option value="3">Gold</option>
+                      <option value="4">Silver</option>
+                      <option value="5">Member</option>
                     </select>
-                    <label for="select2">Tiêu chuẩn phòng</label>
+                    <label for="select2">Loại khách</label>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="form-floating">
-                    <select class="form-select" id="select3">
-                      <option value="1">Năm</option>
-                      <option value="2">Tháng</option>
-                      <option value="3">Ngày</option>
-                      <option value="4">Giờ</option>
-                    </select>
-                    <label for="select3">Kiểu thuê</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <select class="form-select" id="select4">
-                      <option value="1">2</option>
-                      <option value="2">4</option>
-                      <option value="2">6</option>
-                      <option value="2">8</option>
-                      <option value="2">10</option>
-                    </select>
-                    <label for="select4">Số lượng người tối đa</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <label>Dịch vụ đi kèm</label>
-                </div>
-
-                <div class="col-12">
-                  <div class="form-floating">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Thể thao & Gym
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                      <label class="form-check-label" for="defaultCheck2">
-                        Massage & Yoga
-                      </label>
-                    </div>
-
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                      <label class="form-check-label" for="defaultCheck3">
-                        Karaoke
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                      <label class="form-check-label" for="defaultCheck4">
-                        Ẩm thực
-                      </label>
-                    </div>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="identify"
+                            placeholder="Your Email"
+                    />
+                    <label for="identify">Số CMND/CCCD</label>
                   </div>
                 </div>
 
@@ -299,7 +228,7 @@
                                 id="message"
                                 style="height: 100px"
                         ></textarea>
-                    <label for="message">Ghi chú</label>
+                    <label for="message">Địa chỉ</label>
                   </div>
                 </div>
                 <div class="col-12">
