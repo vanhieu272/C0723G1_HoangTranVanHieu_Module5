@@ -142,13 +142,13 @@
     <div class="container">
       <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
         <h1 class="mb-5">
-          <span class="text-primary text-uppercase">Thêm mới khách hàng</span>
+          <span class="text-primary text-uppercase">Thêm mới hợp đồng</span>
         </h1>
       </div>
       <div class="row g-5">
         <div class="col-lg-6">
           <div class="row g-3">
-          <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/2d/b2/78/best-place-for-view-and.jpg?w=700&h=-1&s=1" alt="">
           </div>
           </div>
         <div class="col-lg-6">
@@ -160,10 +160,21 @@
                     <input
                             type="text"
                             class="form-control"
-                            id="room-name"
+                            id="contactId"
                             placeholder="Your Name"
                     />
-                    <label for="room-name">Tên khách hàng</label>
+                    <label for="contactId">Mã hợp đồng</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="tempCost"
+                            placeholder="Số tiền cọc"
+                    />
+                    <label for="tempCost">Số tiền cọc</label>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -171,64 +182,31 @@
                     <input
                             type="date"
                             class="form-control"
-                            id="dob"
+                            id="startDate"
                     />
-                    <label for="dob">Ngày sinh</label>
+                    <label for="startDate">Ngày bắt đầu</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <select class="form-select" id="select1">
-                      <option value="1">Nam</option>
-                      <option value="2">Nữ</option>
-                    </select>
-                    <label for="select1">Giới tính</label>
+                    <input
+                            type="date"
+                            class="form-control"
+                            id="endDate"
+                    />
+                    <label for="endDate">Ngày kết thúc</label>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <select class="form-select" id="select2">
-                      <option value="1">Diamond</option>
-                      <option value="2">Platinum</option>
-                      <option value="3">Gold</option>
-                      <option value="4">Silver</option>
-                      <option value="5">Member</option>
-                    </select>
-                    <label for="select2">Loại khách</label>
-                  </div>
-                </div>
+
                 <div class="col-md-12">
                   <div class="form-floating">
                     <input
                             type="text"
                             class="form-control"
-                            id="identify"
+                            id="totalCost"
                             placeholder="Your Email"
                     />
-                    <label for="identify">Số CMND/CCCD</label>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                            type="file"
-                            class="form-control"
-                            id="link-img"
-                            placeholder="Link ảnh"
-                    />
-                    <label for="link-img">Chọn Ảnh</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                        <textarea
-                                class="form-control"
-                                placeholder="Special Request"
-                                id="message"
-                                style="height: 100px"
-                        ></textarea>
-                    <label for="message">Địa chỉ</label>
+                    <label for="totalCost">Tổng số tiền thanh toán</label>
                   </div>
                 </div>
                 <div class="col-12">
