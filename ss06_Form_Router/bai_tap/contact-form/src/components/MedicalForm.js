@@ -46,36 +46,24 @@ function MedicalForm() {
     };
 
     const handleSubmit = (values) => {
-        const message = `
-
+        const data = `
             Tên: ${values.name}
-
             CMND: ${values.idCard}
-
             Năm sinh: ${values.birthday}
-
             Giới tính: ${values.gender === '1' ? 'Nam' : 'Nữ'}
-
             Quốc tịch: ${values.nationality}
-
             Nơi làm vệc: ${values.workplace}
-
             Bộ phận làm việc: ${values.jobPosition}
-
             BHYT: ${values.insuranceCard === '1' ? 'Có' : 'Không'}
-
             Tỉnh/Thành: ${values.province}
-
             Quận/Huyện: ${values.district}
-
             Phường/Xã: ${values.commune}
-
             Số nhà, tên đường: ${values.address}
-
             SĐT: ${values.phoneNumber}
-
             Email: ${values.email}
         `;
+        const message = 'Thêm thành công !!'
+        alert(data);
         toast.success(message);
         console.log(`${JSON.stringify(values)}`);
     };

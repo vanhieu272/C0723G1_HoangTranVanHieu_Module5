@@ -6,7 +6,7 @@
       "Deaths": 0,
       "Recovered": 0,
       "Active": 0,
-      "Date": "2020-01-22T00:00:00Z"
+      "Date": "2020-01-22"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "Deaths": 0,
       "Recovered": 0,
       "Active": 0,
-      "Date": "2020-01-23T00:00:00Z"
+      "Date": "2020-01-23"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "Deaths": 0,
       "Recovered": 0,
       "Active": 0,
-      "Date": "2020-01-24T00:00:00Z"
+      "Date": "2020-01-24"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "Deaths": 0,
       "Recovered": 0,
       "Active": 0,
-      "Date": "2020-01-25T00:00:00Z"
+      "Date": "2020-01-25"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "Deaths": 0,
       "Recovered": 0,
       "Active": 0,
-      "Date": "2020-01-26T00:00:00Z"
+      "Date": "2020-01-26"
     }
   ]
 }
