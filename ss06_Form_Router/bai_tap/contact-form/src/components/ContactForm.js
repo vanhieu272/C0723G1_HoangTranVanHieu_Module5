@@ -39,7 +39,6 @@ export default function ContactForm() {
         }
     )
 
-
     return (
         <ThemeProvider theme={defaultTheme}>
             <Container component="main" maxWidth="xs">

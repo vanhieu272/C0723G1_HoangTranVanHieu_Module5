@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "Confirmed": 0,
+      "Deaths": 0,
+      "Recovered": 0,
+      "Active": 0,
+      "Date": "2020-01-22T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "Confirmed": 0,
+      "Deaths": 0,
+      "Recovered": 0,
+      "Active": 0,
+      "Date": "2020-01-23T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "Confirmed": 0,
+      "Deaths": 0,
+      "Recovered": 0,
+      "Active": 0,
+      "Date": "2020-01-24T00:00:00Z"
+    },
+    {
+      "id": 4,
+      "Confirmed": 0,
+      "Deaths": 0,
+      "Recovered": 0,
+      "Active": 0,
+      "Date": "2020-01-25T00:00:00Z"
+    },
+    {
+      "id": 5,
+      "Confirmed": 0,
+      "Deaths": 0,
+      "Recovered": 0,
+      "Active": 0,
+      "Date": "2020-01-26T00:00:00Z"
+    }
+  ]
+}

@@ -9,10 +9,8 @@ import ContactForm from "./components/ContactForm";
 function App() {
   return (
     <>
-      <ContactForm></ContactForm>
         <MedicalForm/>
-        <ToastContainer>
-        </ToastContainer>
+        <ToastContainer></ToastContainer>
     </>
   );
 }

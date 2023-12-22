@@ -27,7 +27,7 @@ function MedicalForm() {
         idCard: Yup.string().required("Vui lòng nhập CMND/CCCD")
             .min(9, "Không được ít hơn 5 kí tự")
             .max(12, "Không được lớn hơn 12 kí tự"),
-        born: Yup.date()
+        birthday: Yup.date()
             .required("Vui lòng nhập ngày sinh")
             .min(new Date('1900-01-01T00:00:00'), "Năm sinh phải lớn hơn 1900"),
 
@@ -41,46 +41,46 @@ function MedicalForm() {
             .matches("(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})", "Số điện thoại không đúng định dạng"),
         email: Yup.string()
             .required("Vui lòng nhập email")
-            .matches(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$/, "Email không hợp lệ"),
-    };
+            .email("Email không hợp lệ")
 
+    };
 
     const handleSubmit = (values) => {
         const message = `
-        
+
             Tên: ${values.name}
-            
+
             CMND: ${values.idCard}
-            
+
             Năm sinh: ${values.birthday}
-            
+
             Giới tính: ${values.gender === '1' ? 'Nam' : 'Nữ'}
-            
+
             Quốc tịch: ${values.nationality}
-            
+
             Nơi làm vệc: ${values.workplace}
-            
+
             Bộ phận làm việc: ${values.jobPosition}
-            
+
             BHYT: ${values.insuranceCard === '1' ? 'Có' : 'Không'}
-            
+
             Tỉnh/Thành: ${values.province}
-            
+
             Quận/Huyện: ${values.district}
-            
+
             Phường/Xã: ${values.commune}
-            
+
             Số nhà, tên đường: ${values.address}
-            
+
             SĐT: ${values.phoneNumber}
-            
+
             Email: ${values.email}
         `;
         toast.success(message);
         console.log(`${JSON.stringify(values)}`);
     };
 
-    return <>
+    return( <>
         <div className="container justify-content-center p-5">
             <h2>Tờ khai Y tế</h2>
             <Formik
@@ -176,7 +176,7 @@ function MedicalForm() {
                 </Form>
             </Formik>
         </div>
-    </>;
+    </>);
 }
 
 export default MedicalForm;
