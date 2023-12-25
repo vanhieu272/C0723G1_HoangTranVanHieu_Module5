@@ -1,0 +1,33 @@
+#bd {
+    border: 1px solid;
+    margin-left: 641px;
+    width: 30%;
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 20px #51504B;
+    font-family: cursive;
+}
+.btn {
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 20px #51504B
+}
+body {
+    background-color: #EAE9E5;
+
+}
+
+.table {
+    color: black;
+    border: 1px;
+    border-radius: 10px;
+}
+.card-body {
+    box-shadow: 10px 10px 20px #51504B;
+    background-color: white;
+}
+td,th{
+    text-align: center;
+}
