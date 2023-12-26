@@ -31,15 +31,10 @@ const ToDoList = ()=> {
             axios.post('https://jsonplaceholder.typicode.com/todos', newTask)
                 .then((response) => {
                     console.log('Task added:', response.data);
-                    setNewTask({
-                        title: '',
-                        completed: false,
-                        userId: 1,
-                    });
+                    setNewTask(
+                        newTask
+                    );
                     return axios.get('https://jsonplaceholder.typicode.com/todos');
-                })
-                .then((response) => {
-                    setTasks(response.data);
                 })
                 .catch((error) => {
                     console.error('Error adding task:', error);
