@@ -42,14 +42,23 @@ export function Customers() {
     return (
         <>
             <div className="container-fluid">
-                <h1 id="bd" className="h3 mb-2 text-gray-800">CUSTOMER</h1>
-                <NavLink to="/customers/create">
-                    <button type="button" className="btn btn-outline-success">Create customer</button><br/>
-                </NavLink>
-                <input type="text" placeholder="Please input name search" style={{width:"14%",borderRadius:"10px",padding:"5px"}} onChange={event => setNameSearch(event.target.value)}/>
+                <h1 id="bd" className="mb-2">CUSTOMER</h1>
+                <div className="d-flex justify-content-center mt-5">
+                    <div className="col-3">
+                        <NavLink to="/customers/create">
+                            <button type="button" className="btn btn-outline-primary">Create customer</button><br/>
+                        </NavLink>
+                    </div>
+                    <div className="col-6">
+                        <input type="text" placeholder="Enter customer's name" style={{width:"100%",borderRadius:"10px",padding:"5px"}} onChange={event => setNameSearch(event.target.value)}/>
+                    </div>
+                    <div className="col-3"></div>
+                </div>
+
+
                 <div className="card-body">
                     <div className="table-responsive" style={{overflowX: "visible"}}>
-                        <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
+                        <table className="table table-bordered table-striped" id="dataTable" width="100%" cellSpacing="0">
                             <thead>
                             <tr>
                                 <th>N0.</th>
@@ -82,8 +91,8 @@ export function Customers() {
                                     </td>
                                     <td>
                                         <button type="button" className="btn btn-outline-danger"
-                                                onClick={() => showModal(customer)}>
-                                            Remove
+                                                >
+                                            <i className="fa-solid fa-trash" onClick={() => showModal(customer)}></i>
                                         </button>
                                     </td>
                                 </tr>

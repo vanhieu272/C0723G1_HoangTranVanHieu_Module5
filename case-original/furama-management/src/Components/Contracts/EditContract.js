@@ -53,7 +53,7 @@ export function EditContract(){
             onSubmit={(contract) => submit(contract)}
             validationSchema={Yup.object(validateObject)}>
             <div className="container px-5 my-5">
-                <h2 style={{marginLeft:'7%'}}>UPDATE INFORMATION CONTRACT</h2>
+                <h2 style={{marginLeft:'7%'}}>EDIT CONTRACT</h2>
                 <Form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div className="mb-3">
                         <label className="form-label" htmlFor="contractNumber"><b>Contract Number</b><span style={{color:"red"}}>*</span></label>

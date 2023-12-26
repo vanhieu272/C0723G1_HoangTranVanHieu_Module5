@@ -45,7 +45,7 @@ export function CreateContract() {
                 onSubmit={values =>submit(values)}
                 validationSchema={Yup.object(validateObject)}>
             <div className="container px-5 my-5">
-                <h2 style={{marginLeft:'17%'}}>Create contract</h2>
+                <div className="d-flex justify-content-center"><h2>NEW CONTRACT</h2></div>
                 <Form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div className="mb-3">
                         <label className="form-label" htmlFor="contractNumber"><b>Contract Number</b><span style={{color:"red"}}>*</span></label>

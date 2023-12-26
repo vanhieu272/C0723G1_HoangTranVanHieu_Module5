@@ -68,7 +68,7 @@ export function EditCustomer() {
         <Formik initialValues={initValue} onSubmit={(customer) => updateCustomer(customer)}
                 validationSchema={Yup.object(validateObject)}>
             <div className="container px-5 my-5">
-                <h2 style={{marginLeft: '7%'}}>Update information Customer</h2>
+                <h2 style={{marginLeft: '7%'}}>EDIT CUSTOMER</h2>
                 <Form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div className="mb-3">
                         <label className="form-label" htmlFor="fullName"><b>Full name</b><span
@@ -93,7 +93,7 @@ export function EditCustomer() {
                         <label className="form-label d-block"><b>Gender</b><span style={{color: "red"}}>*</span></label>
                         <div className="form-check form-check-inline">
                             <Field className="form-check-input" id="men" type="radio" name="gender" value="1"/>
-                            <label className="form-check-label" htmlFor="men">Men</label>
+                            <label className="form-check-label" htmlFor="men">Male</label>
                         </div>
                         <div className="form-check form-check-inline">
                             <Field className="form-check-input" id="female" type="radio" name="gender" value="0"/>

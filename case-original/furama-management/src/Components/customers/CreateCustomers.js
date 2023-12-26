@@ -70,7 +70,7 @@ export function CreateCustomers (){
         <>
             <Formik initialValues={initValue} onSubmit={(customer) =>saveCustomer(customer)} validationSchema={Yup.object(validateObject)}>
             <div className="container px-5 my-5">
-                <h2 style={{marginLeft:'17%'}}>Create Customer</h2>
+                <div className="d-flex justify-content-center"><h2>NEW CUSTOMER</h2></div>
                 <Form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div className="mb-3">
                         <label className="form-label" htmlFor="fullName"><b>Full name</b><span style={{color:"red"}}>*</span></label>
@@ -91,7 +91,7 @@ export function CreateCustomers (){
                         <label className="form-label d-block"><b>Gender</b><span style={{color:"red"}}>*</span></label>
                         <div className="form-check form-check-inline">
                             <Field className="form-check-input"  id="men" type="radio" name="gender" value="1"/>
-                            <label className="form-check-label" htmlFor="men">Men</label>
+                            <label className="form-check-label" htmlFor="men">Male</label>
                         </div>
                         <div className="form-check form-check-inline">
                             <Field className="form-check-input" id="female" type="radio" name="gender" value="0"/>
