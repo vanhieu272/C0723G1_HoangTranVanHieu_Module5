@@ -1,11 +1,21 @@
 import axios from "axios";
 
- const URL_CUSTOMERS ="http://localhost:8080/customers/";
+const URL_CUSTOMERS ="http://localhost:8080/customers/";
 
 export const getAll = async (nameSearch) =>{
     try {
         let result = await axios.get(URL_CUSTOMERS + `?name_like=${nameSearch}`)
-        return result.data;
+        return result.data.sort((a, b) => {
+            const nameA = a.name.toUpperCase();
+            const nameB = b.name.toUpperCase();
+            if (nameA < nameB) {
+                return -1;
+            } else if (nameA > nameB) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
     }catch (e){
         console.log(e)
     }

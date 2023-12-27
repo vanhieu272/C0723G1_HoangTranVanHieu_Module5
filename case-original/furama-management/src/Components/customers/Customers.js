@@ -14,7 +14,7 @@ export function Customers() {
     const [nameSearch,setNameSearch] = useState("");
     useEffect(() => {
         getDataCustomers();
-        getDataCustomerType()
+        getDataCustomerType();
     }, [nameSearch])
 
     const getDataCustomers = async () => {

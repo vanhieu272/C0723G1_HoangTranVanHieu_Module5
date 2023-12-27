@@ -2,7 +2,7 @@
   "customers": [
     {
       "id": 2,
-      "name": "Châu",
+      "name": "Châu tuấn",
       "birthday": "2001-05-03",
       "gender": "0",
       "address": "Sai Gon",
@@ -78,6 +78,19 @@
       },
       "roomRented": "tuangay@gmail.com",
       "id": 8
+    },
+    {
+      "id": 9,
+      "name": "Tran Linh Giang2",
+      "birthday": "2002-12-08",
+      "gender": "1",
+      "address": "5",
+      "phoneNumber": "0999888777",
+      "email": "modvhpubg@gmail.com",
+      "customerType": {
+        "id": 1,
+        "name": "Gold"
+      }
     }
   ],
   "customerType": [
